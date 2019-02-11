@@ -1,4 +1,6 @@
 
 #!/bin/bash
 
+env
+
 docker build -t justinarmory/batch:${BUILD_ID} .
