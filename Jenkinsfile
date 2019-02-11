@@ -10,7 +10,7 @@ node {
     }
 
     stage("Archive") {
-        sh("echo 'No archive'")
+        archiveArtifacts artifacts: 'build.properties', fingerprint: true
     }
 
     cleanWs()
