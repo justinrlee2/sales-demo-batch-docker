@@ -3,4 +3,8 @@
 
 env
 
+echo "Hello"
+echo "${GIT_COMMIT}"
+echo "goodbye"
+
 docker build -t justinarmory/batch:${BUILD_ID} .
