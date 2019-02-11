@@ -1,2 +1,4 @@
 
 echo "not really pushing yet"
+
+whoami
