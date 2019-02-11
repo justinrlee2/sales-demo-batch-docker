@@ -1,7 +1,4 @@
 
 #!/bin/bash
 
-TS=$(date +%s)
-env
-
-docker build -t justinarmory/batch:${TS} .
+docker build -t justinarmory/batch:${BUILD_ID} .
