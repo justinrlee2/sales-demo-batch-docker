@@ -1,6 +1,6 @@
 
 #!/bin/bash
 
-env
+time +%s > TS
 
-docker build -t justinarmory/batch:${BUILD_ID} .
+docker build -t justinarmory/batch:$(cat TS) .
