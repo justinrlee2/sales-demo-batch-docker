@@ -1,6 +1,2 @@
 
-echo "not really pushing yet"
-
-whoami
-
-docker push justinarmory/batch:${BUILD_ID}
+docker push justinarmory/batch:$(cat TAG)
