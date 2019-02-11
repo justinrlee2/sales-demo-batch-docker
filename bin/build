@@ -4,4 +4,4 @@
 TS=$(date +%s)
 env
 
-docker build -t justinrlee/batch:${TS}
+docker build -t justinrlee/batch:${TS} .
