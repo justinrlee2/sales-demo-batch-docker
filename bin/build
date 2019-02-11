@@ -1,6 +1,6 @@
 
 #!/bin/bash
 
-echo "${BUILD_ID}-$(time +%s)" > TAG
+echo "${BUILD_ID}-$(date +%s)" > TAG
 
 docker build -t justinarmory/batch:$(cat TAG) .
