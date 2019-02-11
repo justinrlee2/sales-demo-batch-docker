@@ -1,7 +1,5 @@
-FROM alpine:latest
+FROM python:3.6.8
 
-COPY script.sh /
+COPY script.py /
 
-RUN chmod +x script.sh
-
-ENTRYPOINT "/script.sh"
+CMD ["python", "/script.py"]
