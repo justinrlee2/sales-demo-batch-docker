@@ -2,7 +2,7 @@ import time
 import requests
 
 print("Starting python script...")
-print("Getting sector performance")
+print("Getting sector performance...")
 r = requests.get('https://financialmodelingprep.com/api/sectors-performance')
 print(r.text)
 print("Processing code (sleep for 30 seconds)...")
