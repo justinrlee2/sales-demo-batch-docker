@@ -1,7 +1,10 @@
 import time
+import requests
 
 print("Starting python script...")
-print("Processing code (runs for 30 seconds)...")
+print("Getting sector performance")
+r = requests.get('https://financialmodelingprep.com/api/sectors-performance')
+print("Processing code (sleep for 30 seconds)...")
 
 time.sleep(6)
 print("20%")
@@ -17,5 +20,7 @@ print("80%")
 
 time.sleep(6)
 print("100%")
+
+print(r.text[-5:5])
 
 print("Done!")
